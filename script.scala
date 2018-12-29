@@ -19,6 +19,7 @@ clusters.clusterCenters(4)
 // Evaluate clustering by computing Within Set Sum of Squared Errors
 val WSSSE = clusters.computeCost(parsedData)
 println("Within Set Sum of Squared Errors = " + WSSSE)
+parsedData.foreach(x=>{println(x(1))})//prints collumn 1//
 
 // Save and load model
 //clusters.save(sc, "target/org/apache/spark/KMeansExample/KMeansModel")
